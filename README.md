@@ -3,7 +3,6 @@ REPRODUCING RESULTS
 
 On a purpose of reproducible research, we found pertinent to add a reproducibility part to this paper. 
 The original idea to create a “reproducibility” section in a research paper to enhance reproducibility in the writing process and in the reviewing process comes from (Bajpai et al. 2017).
-Code 1: Example of Bash script used in our experiment.
 
 We used Bash scripts to run our experiments, with or without the Slurm Workload Manager (Code 1). 
 In the code repository, you will find 6 folders: “testU01-nodes”, “testU01-ru01”, “testU01-hpcsmp”, and the three same names with “RealInterval” at the end. 
@@ -19,7 +18,10 @@ You have to run “./configure”, then  “make” and after that “make insta
 If you do not have root privilege, you should also run “./configure –prefix=<installDirectory>”. 
 The previous part of installation is not mandatory if you just copy our work folder, library is already installed in the folder named “installDirectory” (you just have to delete all results files with “rm result*”, and you will obtain a folder with TestU01 already installed plus MT).
 Then, you have to execute the 3 following export lines, using the path to the installDirectory (you can use “pwd” command in the installDirectory folder to get an absolute path, and replace <install directory> by the result of pwd :
-Code 2: Library path used for TestU01 testing
+export LD_LIBRARY_PATH=<installDirectory>/lib:${LD_LIBRARY_PATH}
+export LIBRARY_PATH=<installDirectory>/lib:${LIBRARY_PATH}
+export C_INCLUDE_PATH=<installDirectory>/include:${C_INCLUDE_PATH}
+
 Then, to compile, you have to run “gcc testMT.c mt19937ar.c -O2 -o executable -ltestu01 -lprobdist -lmylib -lm”. 
 After that, you can just run your executable by running “./executable [path of the MT status to test] > resultFilename.txt” and that’s all. 
 It will run the Big Crush test on your MT status, saving the output in a file named “resultFilename.txt”.
