@@ -1,0 +1,322 @@
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  15
+ Total CPU time:   00:00:05.84
+
+ All tests were passed
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+--
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  144
+ Total CPU time:   00:23:16.53
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 71  LinearComp, r = 0              1 - eps1
+ 72  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  160
+ Total CPU time:   02:37:25.20
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 80  LinearComp, r = 0              1 - eps1
+ 81  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  15
+ Total CPU time:   00:00:05.79
+
+ All tests were passed
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+--
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  144
+ Total CPU time:   00:23:08.79
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 71  LinearComp, r = 0              1 - eps1
+ 72  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  160
+ Total CPU time:   02:37:29.59
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 12  CollisionOver, t = 21           0.9996 
+ 80  LinearComp, r = 0              1 - eps1
+ 81  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+--
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  15
+ Total CPU time:   00:00:05.81
+
+ All tests were passed
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+--
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  144
+ Total CPU time:   00:23:20.90
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 71  LinearComp, r = 0              1 - eps1
+ 72  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  160
+ Total CPU time:   02:37:36.29
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 54  SampleMean, r = 10              0.9994 
+ 80  LinearComp, r = 0              1 - eps1
+ 81  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+--
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  15
+ Total CPU time:   00:00:05.79
+
+ All tests were passed
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+--
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  144
+ Total CPU time:   00:23:19.01
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 71  LinearComp, r = 0              1 - eps1
+ 72  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  160
+ Total CPU time:   02:37:38.51
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 80  LinearComp, r = 0              1 - eps1
+ 81  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  15
+ Total CPU time:   00:00:05.80
+
+ All tests were passed
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+--
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  144
+ Total CPU time:   00:23:20.15
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 71  LinearComp, r = 0              1 - eps1
+ 72  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  160
+ Total CPU time:   02:37:15.48
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 80  LinearComp, r = 0              1 - eps1
+ 81  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  15
+ Total CPU time:   00:00:05.80
+
+ All tests were passed
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+--
+========= Summary results of Crush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  144
+ Total CPU time:   00:23:20.26
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 71  LinearComp, r = 0              1 - eps1
+ 72  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of BigCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  160
+ Total CPU time:   02:37:23.83
+ The following tests gave p-values outside [0.001, 0.9990]:
+ (eps  means a value < 1.0e-300):
+ (eps1 means a value < 1.0e-15):
+
+       Test                          p-value
+ ----------------------------------------------
+ 80  LinearComp, r = 0              1 - eps1
+ 81  LinearComp, r = 29             1 - eps1
+ ----------------------------------------------
+ All other tests were passed
+--
+========= Summary results of SmallCrush =========
+
+ Version:          TestU01 1.2.3
+ Generator:        MersenneTwiter
+ Number of statistics:  15
+ Total CPU time:   00:00:05.80
+
+ All tests were passed
+
+
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+                 Starting Crush
+                 Version: TestU01 1.2.3
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+

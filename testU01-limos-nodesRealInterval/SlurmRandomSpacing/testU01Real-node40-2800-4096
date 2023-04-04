@@ -1,0 +1,2800 @@
+2800
+2801
+2802
+2803
+2804
+2805
+2806
+2807
+2808
+2809
+2810
+2811
+2812
+2813
+2814
+2815
+2816
+2817
+2818
+2819
+2820
+2821
+2822
+2823
+2824
+2825
+2826
+2827
+2828
+2829
+2830
+2831
+2832
+2833
+2834
+2835
+2836
+2837
+2838
+2839
+2840
+2841
+2842
+2843
+2844
+2845
+2846
+2847
+2848
+2849
+2850
+2851
+2852
+2853
+2854
+2855
+2856
+2857
+2858
+2859
+2860
+2861
+2862
+2863
+2864
+2865
+2866
+2867
+2868
+2869
+2870
+2871
+2872
+2873
+2874
+2875
+2876
+2877
+2878
+2879
+2880
+2881
+2882
+2883
+2884
+2885
+2886
+2887
+2888
+2889
+2890
+2891
+2892
+2893
+2894
+2895
+2896
+2897
+2898
+2899
+2900
+2901
+2902
+2903
+2904
+2905
+2906
+2907
+2908
+2909
+2910
+2911
+2912
+2913
+2914
+2915
+2916
+2917
+2918
+2919
+2920
+2921
+2922
+2923
+2924
+2925
+2926
+2927
+2928
+2929
+2930
+2931
+2932
+2933
+2934
+2935
+2936
+2937
+2938
+2939
+2940
+2941
+2942
+2943
+2944
+2945
+2946
+2947
+2948
+2949
+2950
+2951
+2952
+2953
+2954
+2955
+2956
+2957
+2958
+2959
+2960
+2961
+2962
+2963
+2964
+2965
+2966
+2967
+2968
+2969
+2970
+2971
+2972
+2973
+2974
+2975
+2976
+2977
+2978
+2979
+2980
+2981
+2982
+2983
+2984
+2985
+2986
+2987
+2988
+2989
+2990
+2991
+2992
+2993
+2994
+2995
+2996
+2997
+2998
+2999
+3000
+3001
+3002
+3003
+3004
+3005
+3006
+3007
+3008
+3009
+3010
+3011
+3012
+3013
+3014
+3015
+3016
+3017
+3018
+3019
+3020
+3021
+3022
+3023
+3024
+3025
+3026
+3027
+3028
+3029
+3030
+3031
+3032
+3033
+3034
+3035
+3036
+3037
+3038
+3039
+3040
+3041
+3042
+3043
+3044
+3045
+3046
+3047
+3048
+3049
+3050
+3051
+3052
+3053
+3054
+3055
+3056
+3057
+3058
+3059
+3060
+3061
+3062
+3063
+3064
+3065
+3066
+3067
+3068
+3069
+3070
+3071
+3072
+3073
+3074
+3075
+3076
+3077
+3078
+3079
+3080
+3081
+3082
+3083
+3084
+3085
+3086
+3087
+3088
+3089
+3090
+3091
+3092
+3093
+3094
+3095
+3096
+3097
+3098
+3099
+3100
+3101
+3102
+3103
+3104
+3105
+3106
+3107
+3108
+3109
+3110
+3111
+3112
+3113
+3114
+3115
+3116
+3117
+3118
+3119
+3120
+3121
+3122
+3123
+3124
+3125
+3126
+3127
+3128
+3129
+3130
+3131
+3132
+3133
+3134
+3135
+3136
+3137
+3138
+3139
+3140
+3141
+3142
+3143
+3144
+3145
+3146
+3147
+3148
+3149
+3150
+3151
+3152
+3153
+3154
+3155
+3156
+3157
+3158
+3159
+3160
+3161
+3162
+3163
+3164
+3165
+3166
+3167
+3168
+3169
+3170
+3171
+3172
+3173
+3174
+3175
+3176
+3177
+3178
+3179
+3180
+3181
+3182
+3183
+3184
+3185
+3186
+3187
+3188
+3189
+3190
+3191
+3192
+3193
+3194
+3195
+3196
+3197
+3198
+3199
+3200
+3201
+3202
+3203
+3204
+3205
+3206
+3207
+3208
+3209
+3210
+3211
+3212
+3213
+3214
+3215
+3216
+3217
+3218
+3219
+3220
+3221
+3222
+3223
+3224
+3225
+3226
+3227
+3228
+3229
+3230
+3231
+3232
+3233
+3234
+3235
+3236
+3237
+3238
+3239
+3240
+3241
+3242
+3243
+3244
+3245
+3246
+3247
+3248
+3249
+3250
+3251
+3252
+3253
+3254
+3255
+3256
+3257
+3258
+3259
+3260
+3261
+3262
+3263
+3264
+3265
+3266
+3267
+3268
+3269
+3270
+3271
+3272
+3273
+3274
+3275
+3276
+3277
+3278
+3279
+3280
+3281
+3282
+3283
+3284
+3285
+3286
+3287
+3288
+3289
+3290
+3291
+3292
+3293
+3294
+3295
+3296
+3297
+3298
+3299
+3300
+3301
+3302
+3303
+3304
+3305
+3306
+3307
+3308
+3309
+3310
+3311
+3312
+3313
+3314
+3315
+3316
+3317
+3318
+3319
+3320
+3321
+3322
+3323
+3324
+3325
+3326
+3327
+3328
+3329
+3330
+3331
+3332
+3333
+3334
+3335
+3336
+3337
+3338
+3339
+3340
+3341
+3342
+3343
+3344
+3345
+3346
+3347
+3348
+3349
+3350
+3351
+3352
+3353
+3354
+3355
+3356
+3357
+3358
+3359
+3360
+3361
+3362
+3363
+3364
+3365
+3366
+3367
+3368
+3369
+3370
+3371
+3372
+3373
+3374
+3375
+3376
+3377
+3378
+3379
+3380
+3381
+3382
+3383
+3384
+3385
+3386
+3387
+3388
+3389
+3390
+3391
+3392
+3393
+3394
+3395
+3396
+3397
+3398
+3399
+3400
+3401
+3402
+3403
+3404
+3405
+3406
+3407
+3408
+3409
+3410
+3411
+3412
+3413
+3414
+3415
+3416
+3417
+3418
+3419
+3420
+3421
+3422
+3423
+3424
+3425
+3426
+3427
+3428
+3429
+3430
+3431
+3432
+3433
+3434
+3435
+3436
+3437
+3438
+3439
+3440
+3441
+3442
+3443
+3444
+3445
+3446
+3447
+3448
+3449
+3450
+3451
+3452
+3453
+3454
+3455
+3456
+3457
+3458
+3459
+3460
+3461
+3462
+3463
+3464
+3465
+3466
+3467
+3468
+3469
+3470
+3471
+3472
+3473
+3474
+3475
+3476
+3477
+3478
+3479
+3480
+3481
+3482
+3483
+3484
+3485
+3486
+3487
+3488
+3489
+3490
+3491
+3492
+3493
+3494
+3495
+3496
+3497
+3498
+3499
+3500
+3501
+3502
+3503
+3504
+3505
+3506
+3507
+3508
+3509
+3510
+3511
+3512
+3513
+3514
+3515
+3516
+3517
+3518
+3519
+3520
+3521
+3522
+3523
+3524
+3525
+3526
+3527
+3528
+3529
+3530
+3531
+3532
+3533
+3534
+3535
+3536
+3537
+3538
+3539
+3540
+3541
+3542
+3543
+3544
+3545
+3546
+3547
+3548
+3549
+3550
+3551
+3552
+3553
+3554
+3555
+3556
+3557
+3558
+3559
+3560
+3561
+3562
+3563
+3564
+3565
+3566
+3567
+3568
+3569
+3570
+3571
+3572
+3573
+3574
+3575
+3576
+3577
+3578
+3579
+3580
+3581
+3582
+3583
+3584
+3585
+3586
+3587
+3588
+3589
+3590
+3591
+3592
+3593
+3594
+3595
+3596
+3597
+3598
+3599
+3600
+3601
+3602
+3603
+3604
+3605
+3606
+3607
+3608
+3609
+3610
+3611
+3612
+3613
+3614
+3615
+3616
+3617
+3618
+3619
+3620
+3621
+3622
+3623
+3624
+3625
+3626
+3627
+3628
+3629
+3630
+3631
+3632
+3633
+3634
+3635
+3636
+3637
+3638
+3639
+3640
+3641
+3642
+3643
+3644
+3645
+3646
+3647
+3648
+3649
+3650
+3651
+3652
+3653
+3654
+3655
+3656
+3657
+3658
+3659
+3660
+3661
+3662
+3663
+3664
+3665
+3666
+3667
+3668
+3669
+3670
+3671
+3672
+3673
+3674
+3675
+3676
+3677
+3678
+3679
+3680
+3681
+3682
+3683
+3684
+3685
+3686
+3687
+3688
+3689
+3690
+3691
+3692
+3693
+3694
+3695
+3696
+3697
+3698
+3699
+3700
+3701
+3702
+3703
+3704
+3705
+3706
+3707
+3708
+3709
+3710
+3711
+3712
+3713
+3714
+3715
+3716
+3717
+3718
+3719
+3720
+3721
+3722
+3723
+3724
+3725
+3726
+3727
+3728
+3729
+3730
+3731
+3732
+3733
+3734
+3735
+3736
+3737
+3738
+3739
+3740
+3741
+3742
+3743
+3744
+3745
+3746
+3747
+3748
+3749
+3750
+3751
+3752
+3753
+3754
+3755
+3756
+3757
+3758
+3759
+3760
+3761
+3762
+3763
+3764
+3765
+3766
+3767
+3768
+3769
+3770
+3771
+3772
+3773
+3774
+3775
+3776
+3777
+3778
+3779
+3780
+3781
+3782
+3783
+3784
+3785
+3786
+3787
+3788
+3789
+3790
+3791
+3792
+3793
+3794
+3795
+3796
+3797
+3798
+3799
+3800
+3801
+3802
+3803
+3804
+3805
+3806
+3807
+3808
+3809
+3810
+3811
+3812
+3813
+3814
+3815
+3816
+3817
+3818
+3819
+3820
+3821
+3822
+3823
+3824
+3825
+3826
+3827
+3828
+3829
+3830
+3831
+3832
+3833
+3834
+3835
+3836
+3837
+3838
+3839
+3840
+3841
+3842
+3843
+3844
+3845
+3846
+3847
+3848
+3849
+3850
+3851
+3852
+3853
+3854
+3855
+3856
+3857
+3858
+3859
+3860
+3861
+3862
+3863
+3864
+3865
+3866
+3867
+3868
+3869
+3870
+3871
+3872
+3873
+3874
+3875
+3876
+3877
+3878
+3879
+3880
+3881
+3882
+3883
+3884
+3885
+3886
+3887
+3888
+3889
+3890
+3891
+3892
+3893
+3894
+3895
+3896
+3897
+3898
+3899
+3900
+3901
+3902
+3903
+3904
+3905
+3906
+3907
+3908
+3909
+3910
+3911
+3912
+3913
+3914
+3915
+3916
+3917
+3918
+3919
+3920
+3921
+3922
+3923
+3924
+3925
+3926
+3927
+3928
+3929
+3930
+3931
+3932
+3933
+3934
+3935
+3936
+3937
+3938
+3939
+3940
+3941
+3942
+3943
+3944
+3945
+3946
+3947
+3948
+3949
+3950
+3951
+3952
+3953
+3954
+3955
+3956
+3957
+3958
+3959
+3960
+3961
+3962
+3963
+3964
+3965
+3966
+3967
+3968
+3969
+3970
+3971
+3972
+3973
+3974
+3975
+3976
+3977
+3978
+3979
+3980
+3981
+3982
+3983
+3984
+3985
+3986
+3987
+3988
+3989
+3990
+3991
+3992
+3993
+3994
+3995
+3996
+3997
+3998
+3999
+4000
+4001
+4002
+4003
+4004
+4005
+4006
+4007
+4008
+4009
+4010
+4011
+4012
+4013
+4014
+4015
+4016
+4017
+4018
+4019
+4020
+4021
+4022
+4023
+4024
+4025
+4026
+4027
+4028
+4029
+4030
+4031
+4032
+4033
+4034
+4035
+4036
+4037
+4038
+4039
+4040
+4041
+4042
+4043
+4044
+4045
+4046
+4047
+4048
+4049
+4050
+4051
+4052
+4053
+4054
+4055
+4056
+4057
+4058
+4059
+4060
+4061
+4062
+4063
+4064
+4065
+4066
+4067
+4068
+4069
+4070
+4071
+4072
+4073
+4074
+4075
+4076
+4077
+4078
+4079
+4080
+4081
+4082
+4083
+4084
+4085
+4086
+4087
+4088
+4089
+4090
+4091
+4092
+4093
+4094
+4095
+4096
+4097
+4098
+4099
+4100
+4101
+4102
+4103
+4104
+4105
+4106
+4107
+4108
+4109
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433084 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4110
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433086 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433089 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4111
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433091 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4112
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433093 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4113
+4114
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433095 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4115
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433097 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4116
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433099 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4117
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433102 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4118
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433104 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4119
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433106 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4120
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433057 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4121
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433110 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4122
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433055 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433112 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4123
+4124
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433117 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4125
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433059 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433119 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4126
+4127
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433124 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433126 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4128
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433062 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4129
+4130
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433131 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4131
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433066 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433134 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4132
+4133
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433074 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4134
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433140 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4135
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433071 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433143 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4136
+4137
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433078 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433148 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4138
+4139
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433153 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4140
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433155 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4141
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433080 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433158 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4142
+4143
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433162 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4144
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433164 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4145
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433068 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433167 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4146
+4147
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433171 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4148
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433108 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433173 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4149
+4150
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433178 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4151
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433115 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433180 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4152
+4153
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433185 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4154
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433129 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433187 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4155
+4156
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433192 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4157
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433195 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4158
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433122 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4159
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433199 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4160
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433138 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433201 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4161
+4162
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433206 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4163
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433136 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4164
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433211 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4165
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433146 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433213 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4166
+4167
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433218 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4168
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433150 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433220 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4169
+4170
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433225 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4171
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433160 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4172
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433230 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4173
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433169 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4174
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433235 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4175
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433176 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433237 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4176
+4177
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433183 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433242 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4178
+4179
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433190 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433247 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4180
+4181
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433252 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4182
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433197 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433254 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4183
+4184
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433259 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4185
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433262 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4186
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433204 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433264 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4187
+4188
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433268 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4189
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433208 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4190
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433273 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4191
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433275 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4192
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433216 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433278 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4193
+4194
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433282 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4195
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433223 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4196
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433287 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4197
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433289 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4198
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433232 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433292 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4199
+4200
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433296 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4201
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433298 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4202
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433227 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433301 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4203
+4204
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433305 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4205
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433240 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1433308 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4206
+4207
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433244 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433249 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433257 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433266 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433270 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433280 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433284 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433294 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433303 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433310 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433312 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433314 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433317 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1433319 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4208
+4209
+4210
+4211
+4212
+4213
+4214
+4215
+4216
+4217
+4218
+4219
+4220
+4221
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435625 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4222
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435628 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4223
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435631 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4224
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435634 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4225
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435636 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4226
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435638 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4227
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435640 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4228
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435642 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4229
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435644 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4230
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435600 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435646 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4231
+4232
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435650 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4233
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435592 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4234
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435603 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435655 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4235
+4236
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435596 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435660 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4237
+4238
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435605 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435665 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4239
+4240
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435607 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435670 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4241
+4242
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435612 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435675 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4243
+4244
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435616 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435680 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4245
+4246
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435619 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435685 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4247
+4248
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435690 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4249
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435623 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4250
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435695 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4251
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435648 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4252
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435700 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4253
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435652 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435702 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4254
+4255
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435657 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435707 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4256
+4257
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435662 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435712 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4258
+4259
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435667 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435717 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4260
+4261
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435722 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4262
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435672 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4263
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435727 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4264
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435677 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4265
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435732 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4266
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435682 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4267
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435737 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4268
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435687 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4269
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435742 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4270
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435692 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435744 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4271
+4272
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435697 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435749 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4273
+4274
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435705 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435754 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4275
+4276
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435759 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4277
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435709 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4278
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435724 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435764 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4279
+4280
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435769 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4281
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435714 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4282
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435774 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4283
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435719 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435776 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4284
+4285
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435729 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435781 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4286
+4287
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435734 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435786 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4288
+4289
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435740 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435791 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4290
+4291
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435796 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4292
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435747 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4293
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435801 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4294
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435751 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4295
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435806 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4296
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435756 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4297
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435811 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4298
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435761 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435813 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4299
+4300
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435766 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435818 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4301
+4302
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435771 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435823 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4303
+4304
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435828 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4305
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435779 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4306
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435833 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4307
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435783 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4308
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435838 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4309
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435788 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4310
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435843 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4311
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435793 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4312
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435848 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4313
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435798 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435850 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4314
+4315
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435803 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435855 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4316
+4317
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435808 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435860 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4318
+4319
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435816 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435865 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4320
+4321
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435820 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435870 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4322
+4323
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435875 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4324
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435825 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4325
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435880 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4326
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435830 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4327
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435885 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4328
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435835 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4329
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435890 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4330
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435840 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435892 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4331
+4332
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435845 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435897 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4333
+4334
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435853 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435902 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4335
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435857 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435907 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435862 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435912 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435867 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435872 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435877 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435882 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435887 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435895 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435899 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435904 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1435909 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4336
+4337
+4338
+4339
+4340
+4341
+4342
+4343
+4344
+4345
+4346
+4347
+4348
+4349
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435943 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4350
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435946 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4351
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435949 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4352
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435951 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4353
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435953 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4354
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435955 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4355
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435915 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435957 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4356
+4357
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435961 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4358
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435917 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4359
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435966 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4360
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435919 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4361
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435971 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4362
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435922 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4363
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435976 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4364
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435925 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4365
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435981 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4366
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435928 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4367
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435986 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4368
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435931 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435988 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4369
+4370
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435934 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435993 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4371
+4372
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435937 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435998 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4373
+4374
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435940 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436003 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4375
+4376
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435959 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436008 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4377
+4378
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436013 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4379
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435963 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4380
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436018 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4381
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435968 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4382
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436023 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4383
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435973 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4384
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436028 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436030 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4385
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435978 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4386
+4387
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435983 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4388
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436037 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4389
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435991 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4390
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436043 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4391
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1435995 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436045 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4392
+4393
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436000 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436050 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4394
+4395
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436005 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436055 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4396
+4397
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436010 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436060 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4398
+4399
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436065 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4400
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436015 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4401
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436070 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4402
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436020 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4403
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436075 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4404
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436025 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4405
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436080 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4406
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436033 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4407
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436085 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4408
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436035 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436087 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4409
+4410
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436040 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436092 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4411
+4412
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436048 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436097 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4413
+4414
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436102 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4415
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436052 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4416
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436107 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4417
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436057 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4418
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436112 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4419
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436062 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4420
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436117 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4421
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436067 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436119 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4422
+4423
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436072 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4424
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436127 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4425
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436077 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4426
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436132 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4427
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436082 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436134 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4428
+4429
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436090 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436139 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4430
+4431
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436094 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436144 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4432
+4433
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436149 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4434
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436099 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4435
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436104 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436154 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4436
+4437
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436159 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4438
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436109 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4439
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436164 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4440
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436114 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4441
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436169 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4442
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436122 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4443
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436174 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4444
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436124 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436176 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4445
+4446
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436129 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436181 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4447
+4448
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436137 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436186 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4449
+4450
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436141 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436191 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4451
+4452
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436196 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4453
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436146 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4454
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436151 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436201 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4455
+4456
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436206 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4457
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436156 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4458
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436162 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436211 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4459
+4460
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436216 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4461
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436166 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4462
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436221 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4463
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436171 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436179 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436226 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436183 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436231 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436188 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436193 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436198 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436203 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436208 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436213 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436218 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436223 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436228 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4464
+4465
+4466
+4467
+4468
+4469
+4470
+4471
+4472
+4473
+4474
+4475
+4476
+4477
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436262 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4478
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436265 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4479
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436268 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4480
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436270 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4481
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436272 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4482
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436274 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4483
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436276 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4484
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436234 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4485
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436280 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4486
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436236 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4487
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436285 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4488
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436238 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4489
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436290 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4490
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436241 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4491
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436295 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4492
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436245 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4493
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436300 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4494
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436247 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4495
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436305 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4496
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436250 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4497
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436310 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4498
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436254 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4499
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436315 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4500
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436256 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4501
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436320 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4502
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436260 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436322 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4503
+4504
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436278 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436327 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4505
+4506
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436282 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436332 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4507
+4508
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436287 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436337 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4509
+4510
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436292 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436342 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4511
+4512
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436297 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436347 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4513
+4514
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436302 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436352 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4515
+4516
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436307 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436357 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4517
+4518
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436312 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436362 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4519
+4520
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436367 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4521
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436317 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4522
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436325 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436372 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4523
+4524
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436377 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4525
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436329 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4526
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436382 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4527
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436334 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4528
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436387 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4529
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436339 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4530
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436392 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4531
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436344 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4532
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436397 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4533
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436349 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436399 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4534
+4535
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436354 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436404 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4536
+4537
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436359 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436409 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4538
+4539
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436364 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436414 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4540
+4541
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436369 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436419 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4542
+4543
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436374 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436424 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4544
+4545
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436379 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436429 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4546
+4547
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436384 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436434 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4548
+4549
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436439 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4550
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436389 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4551
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436394 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436444 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4552
+4553
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436449 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4554
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436402 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4555
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436454 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4556
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436406 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4557
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436411 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436459 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4558
+4559
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436464 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4560
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436416 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4561
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436469 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4562
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436421 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4563
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436426 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436474 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4564
+4565
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436431 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436479 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4566
+4567
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436484 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4568
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436436 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4569
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436489 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4570
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436441 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4571
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436494 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4572
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436446 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4573
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436499 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4574
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436451 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4575
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436504 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4576
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436456 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436506 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4577
+4578
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436461 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436511 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4579
+4580
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436466 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436516 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4581
+4582
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436471 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436521 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4583
+4584
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436476 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436526 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4585
+4586
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436531 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4587
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436481 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4588
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436536 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4589
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436486 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4590
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436541 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4591
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436491 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436496 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436546 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436501 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436551 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436509 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436513 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436518 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436523 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436528 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436533 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436538 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436543 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436548 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4592
+4593
+4594
+4595
+4596
+4597
+4598
+4599
+4600
+4601
+4602
+4603
+4604
+4605
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436582 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4606
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436585 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4607
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436588 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4608
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436590 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4609
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436592 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4610
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436594 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4611
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436596 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4612
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436554 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4613
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436556 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436600 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4614
+4615
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436558 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436605 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4616
+4617
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436610 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4618
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436561 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4619
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436564 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436615 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4620
+4621
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436620 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4622
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436567 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4623
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436625 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4624
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436570 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4625
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436630 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4626
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436573 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4627
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436576 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436635 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4628
+4629
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436640 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4630
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436579 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4631
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436598 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436645 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4632
+4633
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436602 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436650 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4634
+4635
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436655 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4636
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436607 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4637
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436660 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4638
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436612 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4639
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436665 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4640
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436617 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4641
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436670 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4642
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436622 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4643
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436675 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4644
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436627 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436677 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4645
+4646
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436632 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4647
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436684 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4648
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436637 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4649
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436690 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4650
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436642 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436692 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4651
+4652
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436647 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436697 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4653
+4654
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436652 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436702 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4655
+4656
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436707 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4657
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436657 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4658
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436662 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436712 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4659
+4660
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436667 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436717 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4661
+4662
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436722 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4663
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436672 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4664
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436727 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4665
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436680 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4666
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436732 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4667
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436682 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4668
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436737 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4669
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436687 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4670
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436742 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4671
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436695 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4672
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436747 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4673
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436699 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436749 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4674
+4675
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436704 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436754 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4676
+4677
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436709 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436759 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4678
+4679
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436714 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436764 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4680
+4681
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436719 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436769 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4682
+4683
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436725 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436774 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4684
+4685
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436779 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4686
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436729 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4687
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436784 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4688
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436734 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4689
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436740 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436789 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436791 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4690
+4691
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436744 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4692
+4693
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436799 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4694
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436752 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4695
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436756 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436804 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4696
+4697
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436809 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4698
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436761 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4699
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436766 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436814 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4700
+4701
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436819 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4702
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436771 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4703
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436776 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436824 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4704
+4705
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436829 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4706
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436781 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4707
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436834 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4708
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436786 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4709
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436839 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4710
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436794 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4711
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436844 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4712
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436796 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4713
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436849 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4714
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436801 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4715
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436854 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436856 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4716
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436806 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4717
+4718
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436811 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436861 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4719
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436816 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436866 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436821 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436871 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436826 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436831 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436836 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436841 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436846 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436851 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436859 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436863 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1436868 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4720
+4721
+4722
+4723
+4724
+4725
+4726
+4727
+4728
+4729
+4730
+4731
+4732
+4733
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436902 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4734
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436905 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4735
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436908 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4736
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436910 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4737
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436912 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4738
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436914 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4739
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436916 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4740
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436874 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4741
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436920 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4742
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436876 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436922 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4743
+4744
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436878 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436927 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4745
+4746
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436881 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4747
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436934 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4748
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436884 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4749
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436940 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4750
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436887 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4751
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436945 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4752
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436890 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436947 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4753
+4754
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436893 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436952 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4755
+4756
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436897 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436957 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4757
+4758
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436899 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436962 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4759
+4760
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436918 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436967 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4761
+4762
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436925 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436972 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4763
+4764
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436929 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436977 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4765
+4766
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436932 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436982 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4767
+4768
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436937 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436987 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4769
+4770
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436942 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436992 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4771
+4772
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436950 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436997 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4773
+4774
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437002 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4775
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436954 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4776
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436959 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437007 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4777
+4778
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437012 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4779
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436964 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4780
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437017 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4781
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436969 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4782
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437022 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4783
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436974 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4784
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437027 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4785
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436979 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4786
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437032 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4787
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437034 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4788
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436984 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4789
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437039 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4790
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436989 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437041 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4791
+4792
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436994 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437046 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4793
+4794
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1436999 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437051 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4795
+4796
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437005 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437056 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4797
+4798
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437009 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437061 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4799
+4800
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437014 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437066 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4801
+4802
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437019 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437071 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4803
+4804
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437024 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437076 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4805
+4806
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437029 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437081 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4807
+4808
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437086 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4809
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437037 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4810
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437091 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4811
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437044 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4812
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437096 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4813
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437048 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4814
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437101 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4815
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437053 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437103 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4816
+4817
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437058 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437108 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4818
+4819
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437063 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437113 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4820
+4821
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437068 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437118 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4822
+4823
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437073 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437123 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4824
+4825
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437078 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437128 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4826
+4827
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437083 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437133 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4828
+4829
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437138 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4830
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437088 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4831
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437143 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4832
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437093 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4833
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437148 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4834
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437098 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4835
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437153 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4836
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437106 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437155 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4837
+4838
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437110 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4839
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437162 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4840
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437115 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437165 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4841
+4842
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437120 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437170 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4843
+4844
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437125 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437175 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4845
+4846
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437130 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 17 : 1437180 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+4847
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437135 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437185 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437140 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437190 Erreur de segmentation  ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437145 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437150 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437158 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437160 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437168 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437172 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437177 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437182 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
+/var/spool/slurmd/job194672/slurm_script : ligne 22 : 1437187 Erreur de segmentation  (core dumped) ./exe "./mtsRand4K/mtsRand000M00$x" > resultatNode40RealStatusMts000M00$x.txt
